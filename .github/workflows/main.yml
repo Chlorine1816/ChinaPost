@@ -21,6 +21,6 @@ jobs:
       
       - name: Working
         env:
-          KEY: ${{secrets.KEY}}
+          PUSHSCKEY: ${{secrets.PUSHSCKEY}}
         run: 
           python ./src/group.py
