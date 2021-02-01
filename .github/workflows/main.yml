@@ -21,6 +21,6 @@ jobs:
       
       - name: Working
         env:
-          KEY: ${{secrets.KEY1}}
+          KEY: ${{secrets.KEY}}
         run: 
           python ./src/group.py
