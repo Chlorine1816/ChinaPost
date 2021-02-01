@@ -6,3 +6,4 @@ if __name__=='__main__':
     filename='1.xlsx'
     excel=pd.read_excel(path+filename)
     print(excel.head())
+    excel.to_excel(path+'2.xlsx')
