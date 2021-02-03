@@ -23,4 +23,4 @@ jobs:
         env:
           PUSHSCKEY: ${{secrets.PUSHSCKEY}}
         run: 
-          python ./src/group.py
+          python ./code/send.py
