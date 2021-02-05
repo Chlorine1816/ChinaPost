@@ -130,5 +130,5 @@ if __name__=='__main__':
     desp=writedesp(desp,'最短路径',str(min_dispath))
     desp=writedesp(desp,'路径长度',str(min_disans))
 
-    show_path(excel,min_dispath)
+    #show_path(excel,min_dispath)
     pushWechat(desp)
