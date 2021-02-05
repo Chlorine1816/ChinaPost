@@ -4,3 +4,5 @@ requests
 xlrd
 openpyxl
 pytz
+cufflinks
+gopup
