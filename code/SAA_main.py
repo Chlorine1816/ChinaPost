@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import math
 import cufflinks as cf
-import gopup as gp
 import requests,os
 
 # 微信推送
