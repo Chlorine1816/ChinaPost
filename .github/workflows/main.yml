@@ -23,4 +23,4 @@ jobs:
         env:
           PUSHSCKEY: ${{secrets.PUSHSCKEY}}
         run: 
-          python ./code/Simulated annealing algorithm.py
+          python ./code/SAA_main.py
