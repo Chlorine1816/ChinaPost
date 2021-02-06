@@ -65,7 +65,7 @@ if __name__=='__main__':
     min_dispath=[x for x in range(1,num)] # 0 为起点、终点 
     min_disans=CalLength(excel_dis,min_dispath)
     
-    desp='-*-*-*-*-*-*-日志输出-*-*-*-*-*-*-\n\n'
+    desp='-----------日志输出-----------\n\n'
     desp=writedesp(desp,'原始路径',str(min_dispath))
     desp=writedesp(desp,'原始长度',str(min_disans))
 
@@ -76,10 +76,10 @@ if __name__=='__main__':
     #paths=[i for i in range(1,num)]
     #city_list=list(np.random.permutation(paths))
 
-    T0 = 100*num     #初始温度
+    T0 = 111*num     #初始温度
     T_end = 1e-5     #结束温度
     q = 0.98         #降温系数
-    L=10*num         #每个温度迭代次数
+    L=11*num         #每个温度迭代次数
     t=0              #降温次数初始化
     T=T0             #初始温度
     city_list_copy=[]#保存原始解
@@ -112,7 +112,7 @@ if __name__=='__main__':
                 min_disans=f2
                 min_dispath=city_list.copy()
                 '''
-                desp+=('-------第'+str(t+1)+'次降温'+'-------\n\n')
+                desp+=('-----------第'+str(t+1)+'次降温'+'-----------\n\n')
                 desp=writedesp(desp,'当前温度',str(round(T,5)))
                 desp=writedesp(desp,'当前路径',str(min_dispath))
                 desp=writedesp(desp,'当前长度',str(min_disans))
@@ -125,7 +125,7 @@ if __name__=='__main__':
         T*=q #降温
         t+=1
 
-    desp+='-*-*-*-*-*-*-输出结果-*-*-*-*-*-*-\n\n'
+    desp+='-----------输出结果-----------\n\n'
     desp=writedesp(desp,'降温次数',str(t))
     desp=writedesp(desp,'最短路径',str(min_dispath))
     desp=writedesp(desp,'路径长度',str(min_disans))
