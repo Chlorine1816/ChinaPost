@@ -13,8 +13,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
-          architecture: 'x64'
+          python-version: 3.7
 
       - name: Install dependencies
         run: |
@@ -22,9 +21,7 @@ jobs:
           pip install -r requirements.txt
       
       - name: Working
-        env:
+        env: |
           PUSHSCKEY: ${{secrets.PUSHSCKEY}}
         run: |
-          pip install pytest
-          pip install pytest-cov
-          pytest ./code/SAA_main.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+          python3 ./code/SAA_main.py
