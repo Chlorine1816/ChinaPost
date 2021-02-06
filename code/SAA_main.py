@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import math,os,requests
-#import cufflinks as cf
 
 # 微信推送
 def pushWechat(desp):
