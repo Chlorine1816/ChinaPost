@@ -1,5 +1,4 @@
 import cufflinks as cf
-import gopup as gp
 import pandas as pd
 
 cf.set_config_file(offline=True)

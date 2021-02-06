@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import math
 import cufflinks as cf
-import gopup as gp
 
 def CalDistance(x,y):
     return math.sqrt(x**2+y**2)
