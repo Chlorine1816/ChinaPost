@@ -65,9 +65,9 @@ if __name__=='__main__':
     min_dispath=[x for x in range(1,num)] # 0 为起点、终点 
     min_disans=CalLength(excel_dis,min_dispath)
     
-    desp='-------日志输出-------\n\n'
-    desp=writedesp(desp,'原始长度',str(min_disans))
+    desp='-*-*-*-*-*-*-日志输出-*-*-*-*-*-*-\n\n'
     desp=writedesp(desp,'原始路径',str(min_dispath))
+    desp=writedesp(desp,'原始长度',str(min_disans))
 
     #初始化一个解
     #方案一
@@ -125,7 +125,7 @@ if __name__=='__main__':
         T*=q #降温
         t+=1
 
-    desp+='-------输出结果-------\n\n'
+    desp+='-*-*-*-*-*-*-输出结果-*-*-*-*-*-*-\n\n'
     desp=writedesp(desp,'降温次数',str(t))
     desp=writedesp(desp,'最短路径',str(min_dispath))
     desp=writedesp(desp,'路径长度',str(min_disans))
