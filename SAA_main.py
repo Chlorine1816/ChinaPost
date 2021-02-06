@@ -58,6 +58,7 @@ if __name__=='__main__':
     scurl = f"https://sc.ftqq.com/{SCKEY}.send"
     
     excel=pd.read_excel(path+filename)
+    print(excel.head())
     excel_dis=get_dis(excel)
     excel_dis=np.array(excel_dis).reshape(excel.shape[0],-1)
 
