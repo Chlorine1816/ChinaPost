@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import math,os,requests
+#import cufflinks as cf
 
 # 微信推送
 def pushWechat(desp):
@@ -52,7 +53,7 @@ def get_dis(excel_1):
     return data
 
 if __name__=='__main__':
-    path='./data/'
+    path='./baita/data/'
     filename='points.xlsx'
     SCKEY=os.environ['PUSHSCKEY']
     scurl = f"https://sc.ftqq.com/{SCKEY}.send"
