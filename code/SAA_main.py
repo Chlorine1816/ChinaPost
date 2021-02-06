@@ -5,7 +5,7 @@ import math,os,requests
 
 # 微信推送
 def pushWechat(desp):
-    params = {'text':'Github_BaiTa','desp':desp}
+    params = {'text':'模拟退火算法','desp':desp}
     requests.post(scurl,params=params)
 
 def writedesp(desp,addstr1,addstr2):
