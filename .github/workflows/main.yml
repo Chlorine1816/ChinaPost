@@ -24,7 +24,7 @@ jobs:
       - name: Working
         env:
           PUSHSCKEY: ${{secrets.PUSHSCKEY}}
-        run: 
+        run: |
           pip install pytest
           pip install pytest-cov
           pytest ./code/SAA_main.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
