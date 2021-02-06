@@ -53,7 +53,7 @@ def get_dis(excel_1):
     return data
 
 if __name__=='__main__':
-    path='./baita/data/'
+    path='./data/'
     filename='points.xlsx'
     SCKEY=os.environ['PUSHSCKEY']
     scurl = f"https://sc.ftqq.com/{SCKEY}.send"
