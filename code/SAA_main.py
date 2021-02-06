@@ -111,10 +111,12 @@ if __name__=='__main__':
             if (min_disans>f2):
                 min_disans=f2
                 min_dispath=city_list.copy()
+                '''
                 desp+=('-------第'+str(t+1)+'次降温'+'-------\n\n')
                 desp=writedesp(desp,'当前温度',str(round(T,5)))
                 desp=writedesp(desp,'当前路径',str(min_dispath))
                 desp=writedesp(desp,'当前长度',str(min_disans))
+                '''
             elif (df>=0):
                 r=np.random.rand() # 0-1的随机数，用来决定是否接受新解
                 if (math.exp(-df/T)<=r):
