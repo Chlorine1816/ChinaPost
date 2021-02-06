@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import math,os,requests
-import cufflinks as cf
+#import cufflinks as cf
 
 # 微信推送
 def pushWechat(desp):
@@ -24,6 +24,7 @@ def CalDistance(x,y):
     return math.sqrt(x**2+y**2)
 
 #展示最短路径
+'''
 def show_path(excel,min_path):
     cf.set_config_file(offline=True)
     lng=excel['lng'].values
@@ -34,7 +35,7 @@ def show_path(excel,min_path):
     data.append([lng[0],lat[0]])
     data=pd.DataFrame(data,columns=['lng','lat','text'])
     data.iplot(kind='scatter',x='lng',y='lat',colors='blue',text='text',mode=' lines+markers+text',theme='ggplot')
-    return None
+'''
 
 #距离矩阵
 def get_dis(excel_1):
