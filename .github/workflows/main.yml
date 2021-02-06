@@ -24,4 +24,4 @@ jobs:
         env: 
           PUSHSCKEY: ${{secrets.PUSHSCKEY}}
         run: |
-          python3 SAA_main.py
+          python3 ./code/SAA_main.py
